@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container py-5">
+
+<h1 class="mb-4">Contact Us</h1>
+
+<!--Contact Form-->
+<form class="needs-validation" novalidate>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+    
+
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Write your message here" required></textarea>
+            <div class="invalid-feedback">Please enter a message.</div>
+        </div>
+
+        <!--Radio Button Group-->
+        <div class="mb-3">
+            <label for="reason" class="form-label">Reason for Contacting Us</label>
+            <select class="form-select" id="reason" required>
+                <option value="" disabled selected>Select a reason</option>
+                <option>Support</option>
+                <option>Feedback</option>
+                <option>Business Inquiry</option>
+            </select>
+            <div class="invalid-feedback">Please select a reason</div>
+        </div>
+
+        <!--Submit Button-->
+        <button type="submit" class="btn btn-success">Submit</button>
+    
+    </div>
+</form>
+
+<hr class="my-5">
+
+<!--Pre-populated Submissions Table-->
+<h2>Previous Submissions</h2>
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-borded align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Source</th>
+                <th>Reason</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>Interested in learning more about your services!</td>
+                <td>Search Engine</td>
+                <td>Business Inquiry</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td>Looking for help with my account.</td>
+                <td>Social Media</td>
+                <td>Support</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+        
+    
+
+</body>
+</html>
